@@ -20,7 +20,7 @@ body {
 }    
 
 p {
-    text-align: center;  /*texto dos parágrafos centralizados*/
+    text-align: center;  /*texto dos parágrafos <p> centralizados*/
 }
 
 #missao {
