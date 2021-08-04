@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+header {
+    background: #BBBBBB; 
+    padding: 20px 0; /*espaçamento interno */
+}
+
+.container {
+    position: relative;
+    width: 940px; /*largura*/
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /*espaçamento do texto de menu entre eles à esquerda */
+}
+
+nav a {
+    text-transform: uppercase; /*transforma todo texto em maiusculo que está no menu de navegação*/
+    color: #000; /*deixa o texto dos menus em preto*/
+    font-weight: bold; /*deixa o texto da fonte em negrito*/
+    font-size: 22px; /*tamanho da fonte do menu*/
+    text-decoration: none; /*remove o sublinhado do menu */
+}
+
+nav a:hover { /* muda a cor ao passar o ponteiro do mouse em cima do elemento */
+    color: red; /*muda a cor do link quando colocado o ponteiro do mouse em cima*/
+}
+
+.produtos {
+    width: 940px; /*largura*/
+    margin: 0 auto; /*espaçamento lateral de 0 para cima e para baixo e automatico para os lados*/
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;    
+    width: 30%;
+    vertical-align: top;    
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000; /*Tamanho, Tipo de borda, Cor*/
+    border-radius: 10px; /*Arrendodar a borda*/
+}
+
+.produtos li:hover { /* muda a cor ao passar o ponteiro do mouse em cima do elemento */
+    border-color: red;    
+}
+
+.produtos li:active { /* Ao clicar no elemento e segurar ele fica com outra cor */
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 { /* Ao passar o mouse por cima o elemento muda o tamanho da fonte */
+    font-size: 34px;
+}
+
+.produtos h2 {
+    text-transform: capitalize; /*Deixa o texto com a primeira letra maiuscula*/
+    font-size: 30px;
+    font-weight: bold; /*fonte em negrito*/
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold; /*fonte em negrito*/
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("img/bg.jpg");
+    padding: 40px 0;    
+}
+
+footer .copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
