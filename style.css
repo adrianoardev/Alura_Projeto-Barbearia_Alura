@@ -1,52 +1,159 @@
-body {
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
 }
 
-#banner {
-    width: 100%; /*largura da imagem banner */
+header {
+    background: #BBBBBB; 
+    padding: 20px 0; /*espaçamento interno */
 }
 
-.principal {
-    background-color: #CCCCCC; /*cor de fundo*/
-    padding: 30px; /*espaçamento interno */
+.container {
+    position: relative;
+    width: 940px; /*largura*/
+    margin: 0 auto;
 }
 
-.titulo-principal {
-    padding-left: 20px;  /*espaçamento interno do lado esquerdo de <h1>*/
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.titulo-centralizado {
-    text-align: center; /*centralizar o texto do título de <h2> e <h3> */
-}    
-
-p {
-    text-align: center;  /*texto dos parágrafos <p> centralizados*/
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /*espaçamento do texto de menu entre eles à esquerda */
 }
 
-#missao {
-    font-size: 20px; /*tamanho de fonte utilizada no texto Nossa missão...*/
+nav a {
+    text-transform: uppercase; /*transforma todo texto em maiusculo que está no menu de navegação*/
+    color: #000; /*deixa o texto dos menus em preto*/
+    font-weight: bold; /*deixa o texto da fonte em negrito*/
+    font-size: 22px; /*tamanho da fonte do menu*/
+    text-decoration: none; /*remove o sublinhado do menu */
 }
 
-em strong {
-    color: #FF0000; /*adicionada uma cor em vermelho na tag <strong> */
+nav a:hover { /* muda a cor ao passar o ponteiro do mouse em cima do elemento */
+    color: red; /*muda a cor do link quando colocado o ponteiro do mouse em cima*/
 }
 
-.itens {
-    font-style: italic; /*estilo de fonte italico no itens <li> */
+.produtos {
+    width: 940px; /*largura*/
+    margin: 0 auto; /*espaçamento lateral de 0 para cima e para baixo e automatico para os lados*/
+    padding: 50px 0;
 }
 
-.beneficios {
-    background: #FFFFFF; 
-    padding: 20px; /*espaçamento interno de todos os lados*/      
+.produtos li {
+    display: inline-block;
+    text-align: center;    
+    width: 30%;
+    vertical-align: top;    
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000; /*Tamanho, Tipo de borda, Cor*/
+    border-radius: 10px; /*Arrendodar a borda*/
 }
 
-ul {
-    display: inline-block; /*Ocupa só o tamanho do conteúdo mas deixa mexer em sua largura e espaçamento*/
-    vertical-align: top; /*faz o alinhamento para a vertical, ficando no topo*/
-    width: 20%; /*largura*/
-    margin-right: 15%; /*espaçamaneto extreno para a direita */
+.produtos li:hover { /* muda a cor ao passar o ponteiro do mouse em cima do elemento */
+    border-color: red;    
 }
 
-.imgbeneficios {
-    width: 50%; /*largura da imagem beneficios*/
+.produtos li:active { /* Ao clicar no elemento e segurar ele fica com outra cor */
+    border-color: #088C19;
 }
+
+.produtos li:hover h2 { /* Ao passar o mouse por cima o elemento muda o tamanho da fonte */
+    font-size: 34px;
+}
+
+.produtos h2 {
+    text-transform: capitalize; /*Deixa o texto com a primeira letra maiuscula*/
+    font-size: 30px;
+    font-weight: bold; /*fonte em negrito*/
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold; /*fonte em negrito*/
+    margin-top: 10px;
+}
+
+/*Rodapé*/
+footer {
+    text-align: center;
+    background: url("img/bg.jpg");
+    padding: 40px 0;    
+}
+
+footer .copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*Formulário*/
+form {
+    margin: 40px 0;    
+}
+
+form label, form p {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px; /*margem para baixo de 10px*/
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px; /*margem para baixo de 20px*/
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; /*arredondar a borda*/
+    transition: 1s all;  
+    cursor: pointer; /*ao colocar o mouse em cima do elemento ele se transfomar em uma "mãozinha"*/
+}
+
+.enviar:hover {
+    background: darkorange; /*cor de fundo ao passar o mouse em cima do elemento*/
+    transform: scale(1.2);    
+}
+
+table {
+    margin: 20px 0 40px;    
+}
+
+thead {
+    background: #555;
+    color: white;
+    font-weight: bold;    
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 8px 15px ;
+}
+

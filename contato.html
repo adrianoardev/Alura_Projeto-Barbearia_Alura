@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <div class="container">
+            <h1><img src="img/logo.png" alt="Logo da barbearia Alura"></h1>
+
+        <nav> 
+            <ul> <!--lista não ordenada-->
+                <li><a href="index.html">home</a></li>
+                <li><a href="produtos.html">produtos</a></li>
+                <li><a href="contato.html">contato</a></li>            
+            </ul>    
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action=""> <!--Tag de formulário-->
+            <label for="nome_e_sobrenome">Nome e Sobrenome</label> <!--Etiqueta para o input, usamos sempre juntp com o input-->
+            <input type="text" id="nome_e_sobrenome" class="input-padrao" required> <!--Entrada de dados-->
+
+            <label for="email">E-mail</label> <!--Etiqueta para o input, usamos sempre juntp com o input-->
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--required placeholder: required, faz com que o campo de preencimento seje obrigatório.- placeholder = podemos deixar um texto como sugestão de como deve ser inserido.-->
+
+            <!--Entrada de dados-->
+
+            <label for="telefone">Telefone</label> <!--Etiqueta para o input, usamos sempre com o input-->
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--Entrada de dados-->
+
+            <!--Campo de texto -->
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+
+            <!--Campo de radio button-->
+            <div>
+                <p>Como prefere o nosso contato?</p>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>                
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>                
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label> <!--checked = faz com que o campo fique selecionado ao entrar na página-->               
+            </div>
+
+            <div>
+                <p>Qual hórario você prefere ser atendido?</p>
+                <select name="" id="">
+                    <option value="manha">Manhã</option>  
+                    <option value="tarde">Tarde</option>  
+                    <option value="noite">Noite</option>  
+                </select>
+            </div>  
+
+            <!--Campo de Checkbox-->
+            <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar"> <!--input que não precisa para usar junto um label ele serve para o envio de dados para um servidor, email... Em value colocamos o nome que ficara no botão de envio-->
+
+        </form>
+
+        <table> <!--tabela-->
+            <thead> <!--Cabeçalho da tabela-->
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+        <tbody> <!--Corpo da tabela-->
+            <tr>
+                <td>Segunda</td>
+                <td>8h00 às 20h00</td>
+            </tr>
+
+            <tr>
+                <td>Quarta</td>
+                <td>8h00 às 20h00</td>
+            </tr>
+
+            <tr>
+                <td>Sexta</td>
+                <td>8h00 às 20h00</td>
+            </tr>
+        </tbody>
+
+        </table>
+
+    </main>
+
+    <footer> <!--Rodapé-->
+        <img src="img/logo-branco.png" alt="Logo da barbearia Alura">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2021 </p>
+    </footer>
+    
+</body>
+</html>

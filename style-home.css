@@ -1,0 +1,52 @@
+body {
+
+}
+
+#banner {
+    width: 100%; /*largura da imagem banner */
+}
+
+.principal {
+    background-color: #CCCCCC; /*cor de fundo*/
+    padding: 30px; /*espaçamento interno */
+}
+
+.titulo-principal {
+    padding-left: 20px;  /*espaçamento interno do lado esquerdo de <h1>*/
+}
+
+.titulo-centralizado {
+    text-align: center; /*centralizar o texto do título de <h2> e <h3> */
+}    
+
+p {
+    text-align: center;  /*texto dos parágrafos <p> centralizados*/
+}
+
+#missao {
+    font-size: 20px; /*tamanho de fonte utilizada no texto Nossa missão...*/
+}
+
+em strong {
+    color: #FF0000; /*adicionada uma cor em vermelho na tag <strong> */
+}
+
+.itens {
+    font-style: italic; /*estilo de fonte italico no itens <li> */
+}
+
+.beneficios {
+    background: #FFFFFF; 
+    padding: 20px; /*espaçamento interno de todos os lados*/      
+}
+
+ul {
+    display: inline-block; /*Ocupa só o tamanho do conteúdo mas deixa mexer em sua largura e espaçamento*/
+    vertical-align: top; /*faz o alinhamento para a vertical, ficando no topo*/
+    width: 20%; /*largura*/
+    margin-right: 15%; /*espaçamaneto extreno para a direita */
+}
+
+.imgbeneficios {
+    width: 50%; /*largura da imagem beneficios*/
+}
